@@ -1,10 +1,14 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
   <head>
     <title>AppDeGatos</title>
     <link href="style.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Caveat&family=Delicious+Handrawn&family=Oswald:wght@200&display=swap" rel="stylesheet">
   </head>
   <body>
+    
     <h2>AppDeGatos</h2>
     <main>
       <h3>Imágenes de Gatos:</h3>
@@ -13,13 +17,12 @@
 
       <a href="#" target="_blank" rel="noopener noreferrer"><img src="https://bit.ly/fcc-relaxing-cat" alt="Un lindo gato naranja recostado sobre su espalda."></a>
 
-      <hr>
-
+      <div>
+        <hr>
       <h3>Listas de Gatos</h3>
 
-      <div>
         <p>Cosas que los gatos <em>aman</em>:</p>
-        <ul>
+        <ul class="text">
           <li>Menta gatuna</li>
           <li>Apuntadores Láser</li>
           <li><s>Lasaña</s></li>
@@ -27,12 +30,11 @@
         <img src="imagenes/lasaña.jpg" alt="Lasaña" width="300">
 
         <p>Cosas que los gatos <strong>odian</strong>:</p>
-        <ol>
+        <ol class="text">
           <li>Tratamientos antipulgas</li>
           <li>Truenos</li>
           <li>Otros gatos</li>
         </ol>
-      </div>
       <img src="imagenes/gatos.jpg" alt="Gatos" width="300">
 
       <form action="/enviar-respuesta">
@@ -59,7 +61,8 @@
           <input id="energico" type="checkbox" value="energico" name="personalidad">Enérgico
         </label>
         <br>
-
+        <hr>
+        </div>
         <!-- Texto y Botón Enviar -->
         <h3>Ingrese Nombre</h3>
         <input type="text" placeholder="Nombre de tu gato" required><br>
